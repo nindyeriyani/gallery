@@ -1,0 +1,80 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  width: 950px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.modal img {
+  width: 558px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-description h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.modal-description p {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-media {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-media-icon img{
+  width: 40px;
+}
+
+.social-media span {
+  font-size: 12px;
+}
+

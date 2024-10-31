@@ -5,7 +5,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 header {
@@ -23,6 +23,7 @@ header .profile-photo {
   border-radius: 25px;
   margin-top: 14px;
   margin-left: 35px;
+  cursor: pointer;
 }
 
 header .right-section {
@@ -33,8 +34,13 @@ header .right-section {
 }
 
 header .right-section a {
-  margin-right: 15px;
+  margin-right: 20px;
+  padding: 10px;
   cursor: pointer;
+}
+
+header .right-section a:hover {
+  background: rgba(217, 217, 217, 1);
 }
 
 header .right-section a:nth-last-child(2) {
@@ -44,7 +50,12 @@ header .right-section a:nth-last-child(2) {
 header .hamburger-menu {
   width: 34px;
   margin-left: 80px;
+  padding: 10px;
   cursor: pointer;
+}
+
+header .hamburger-menu:hover {
+  background: rgba(217, 217, 217, 1);
 }
 
 main {
@@ -52,6 +63,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 main .greeting {
@@ -71,15 +83,32 @@ main .greeting {
 
 main .horizontal-scroll {
   display: flex;
-  flex-direction: row;
+  width: 100vw;
   overflow-x: auto;
-  white-space: nowrap;
+  padding-bottom: 10px;
+  gap: 40px;
 }
 
 main .photos {
   position: relative;
+  flex-shrink: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 5px 5px 8px rgba(217, 217, 217, 1);;
+}
+
+main .photos:hover {
+  opacity: 0.9;
+}
+
+.horizontal-scroll .photos:first-child {
   margin-left: 40px;
-  display: inline-block;
+}
+
+.horizontal-scroll .photos:last-child {
+  margin-right: 40px;
 }
 
 main .photos img{
@@ -90,11 +119,12 @@ main .photos img{
 }
 
 main .photos .photo-infos {
-  width: 300px;
+  width: 100%;
+  max-width: 100%;
   height: 110px;
   position: absolute;
   border-top-left-radius: 50px;
-  background-color: lightblue;
+  background-color: #fff;
   bottom: 0;
   display: flex;
   flex-direction: column;
