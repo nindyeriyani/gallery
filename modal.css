@@ -72,9 +72,53 @@
 
 .social-media-icon img{
   width: 40px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.social-media span {
-  font-size: 12px;
+@media (max-width: 500px) {
+  .modal {
+    display: flex;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .modal-description {
+    width: 100%;
+  }
+
+  .modal-description h3 {
+    font-size: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-description p {
+    font-size: 50%;
+  }
+
+  .social-media {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .social-media-icon img{
+    width: 20px;
+    height: 20px;
+  }
 }
 
+@media (max-width: 768px) {
+  
+}

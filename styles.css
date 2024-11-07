@@ -144,3 +144,14 @@ main .photos .photo-infos .desc {
   font-size: 12px;
   font-weight: 300;
 }
+
+@media (max-width: 500px) {
+  header .right-section a {
+    display: none;
+  }
+
+  main .greeting {
+    width: 380px;
+    font-size: 28px;
+  }
+}
